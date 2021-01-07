@@ -15,11 +15,10 @@ library(gifski)
 
 
 weeks_list <- c("week1", "week2", "week3", "week4", "week5", "week6", "week7",
-                "week8", "week9", "week10", "week11", "week12", "week13", 
-                "week14", "week15", "week16", "week17")
+                "week8", "week9", "week10")
 
 
-for (iter in 9:10) {
+for (iter in 1:10) {
   
 
   week <- read.csv(paste(weeks_list[iter], ".csv", sep = ""))
@@ -366,7 +365,8 @@ AUC(test_comp$pred_is_comp, test_comp$is_complete)
 LogLoss(test_comp$pred_is_comp, test_comp$is_complete)
 
 
-
+#####
+#### plotting (some plots are generated in BDBplots.R)
 
 week3_playervar_tbl <- read.csv("week3_playervar.csv")
 
